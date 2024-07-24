@@ -23,6 +23,13 @@ data_validator can also be obtained via the prebuild docker container, as below:
 docker pull ebird013/data_validator:1.0
 ```
 
+Optionally the docker container can be built from included dockerfile:
+```sh
+git clone https://github.com/edwardbirdlab/nextflow_input_std.git
+cd nextflow_input_std
+docker build -t {your_tag} .
+```
+
 # Data_validator in FastQ Paired-End mode
 In this mode data_validator can take single line Paired FastQ files (Gzipped or uncompressed). It looks for the hallmarks of a proper fastq file, and then outputs paired files (gzipped or not) nammed according to input sample name. Currently there is no support for multiline fastqs, or concatenating sequencing runs.
 
