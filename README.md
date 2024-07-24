@@ -1,3 +1,17 @@
+
+
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+<br />
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)
+[![DOI](https://zenodo.org/badge/833264466.svg)](https://zenodo.org/doi/10.5281/zenodo.12812093)
+
+
+
 # Data_Validator
 This is a python scipt that was made to easily standardize the inputs for my nextflow pipelines, as well as do some basic checks to ensure input files are in the format I expect. There are three basic features inculded with the scipt, outlined below. Checked and formatted data will always be output to Validated_Data in the same directory as data_validator.py (/work in the docker container).
 
@@ -59,3 +73,17 @@ Running locally:
 ```sh
 data_validator.py FA {Fasta_file_name} {Optional: --gzip}
 ```
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/edwardbirdlab/nextflow_input_std.svg?style=for-the-badge
+[contributors-url]: https://github.com/edwardbirdlab/nextflow_input_std/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/edwardbirdlab/nextflow_input_std.svg?style=for-the-badge
+[forks-url]: https://github.com/edwardbirdlab/nextflow_input_std/network/members
+[stars-shield]: https://img.shields.io/github/stars/edwardbirdlab/nextflow_input_std.svg?style=for-the-badge
+[stars-url]: https://github.com/edwardbirdlab/nextflow_input_std/stargazers
+[issues-shield]: https://img.shields.io/github/issues/edwardbirdlab/nextflow_input_std.svg?style=for-the-badge
+[issues-url]: https://github.com/edwardbirdlab/nextflow_input_std/issues
+[license-shield]: https://img.shields.io/github/license/edwardbirdlab/nextflow_input_std.svg?style=for-the-badge
+[license-url]: https://github.com/edwardbirdlab/nextflow_input_std/blob/master/LICENSE
