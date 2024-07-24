@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Required modules
 import argparse
 import gzip
@@ -35,7 +37,6 @@ def file_structure(file_list):
 
         for file in file_list:
             file_base = os.path.basename(file)
-            print(file_base)
             shutil.copy(file, 'data_val_temp/' + file_base)
 
     except Exception as e:
