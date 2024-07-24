@@ -68,7 +68,7 @@ Running locally:
 data_validator.py SE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name}  {sample name} {Optional: --gzip, --rename}
 ```
 
-#Data_Validator in Fasta Mode
+# Data_Validator in Fasta Mode
 In this mode datavalidator can take single line OR multi-line Fasta formatted files (Gzipped or uncompressed). It works with DNA/RNA/protein fastas. I can also output compressed or uncompressed fasta files. It will always output single line fastas.
 
 Running with Docker: (While in the directory with your FastQs):
