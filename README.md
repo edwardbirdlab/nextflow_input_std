@@ -30,22 +30,22 @@ Running with Docker: (While in the directory with your FastQs):
 
 Retun uncompressed fastqs:
 ```sh
-docker run -v .:/work PE_FQ /work/{R1_Fastq_file_name} /work/{R2_Fastq_file_name}  {sample name}
+docker run -v .:/work ebird013/data_validator:1.0 PE_FQ /work/{R1_Fastq_file_name} /work/{R2_Fastq_file_name}  {sample name}
 ```
 Retun compressed fastqs:
 ```sh
-docker run -v .:/work PE_FQ /work/{R1_Fastq_file_name} /work/{R2_Fastq_file_name}  {sample name} --gzip
+docker run -v .:/work ebird013/data_validator:1.0 PE_FQ /work/{R1_Fastq_file_name} /work/{R2_Fastq_file_name}  {sample name} --gzip
 ```
 
 Running locally:
 
 Retun uncompressed fastqs:
 ```sh
-data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name}  {sample name}
+data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name} {sample name}
 ```
 Retun compressed fastqs:
 ```sh
-data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name}  {sample name} --gzip
+data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name} {sample name} --gzip
 ```
 
 # Data_validator in FastQ Single-End Mode
@@ -53,7 +53,7 @@ This mode is the same as PE mode, with one additional funciton. In addition to t
 
 Running with Docker: (While in the directory with your FastQs):
 ```sh
-docker run -v .:/work SE_FQ /work/{Fastq_file_name}  {sample name} {Optional: --gzip, --rename}
+docker run -v .:/work ebird013/data_validator:1.0 SE_FQ /work/{Fastq_file_name}  {sample name} {Optional: --gzip, --rename}
 ```
 
 Running locally:
@@ -66,7 +66,7 @@ In this mode datavalidator can take single line OR multi-line Fasta formatted fi
 
 Running with Docker: (While in the directory with your FastQs):
 ```sh
-docker run -v .:/work FA /work/{Fasta_file_name} {Optional: --gzip}
+docker run -v .:/work ebird013/data_validator:1.0 FA /work/{Fasta_file_name} {Optional: --gzip}
 ```
 
 Running locally:
