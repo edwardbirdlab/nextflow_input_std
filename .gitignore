@@ -1,3 +1,4 @@
+
 ### Bioinformatics ###
 *.fasta
 *.fastq
@@ -17,6 +18,7 @@ token.txt
 /unused
 /Validated_Data
 /test_data
+/data_val_temp
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
