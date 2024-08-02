@@ -175,16 +175,16 @@ def check_fasta(fasta):
                 valid_format = False
                 raise ValueError("File Format Error: Fasta had " + str(line_num) + ' lines, not a multiple of 2')
 
-        if valid_format:
-            print(fasta + ' is a proper fasta file')
-            return True
-        else:
-            print(fasta + ' is NOT a proper fasta file')
-            return False
-
 
     except Exception as e:
         print(f"Error processing {fasta}: {e}", file=sys.stderr)
+
+    if valid_format:
+        print(fasta + ' is a proper fasta file')
+        return True
+    else:
+        print(fasta + ' is NOT a proper fasta file')
+        return False
 
 def multiline_fasta_convert(fasta, prefix):
     """
