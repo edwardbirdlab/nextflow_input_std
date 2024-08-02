@@ -201,10 +201,10 @@ def multiline_fasta_convert(fasta, prefix):
                 line = line.strip()
                 if line.startswith('>'):
                     if sequence != '':
-                        outfile.write(line + '\n')
                         outfile.write(sequence + '\n')
                         sequence = ''
-                    else:
+                        outfile.write(line + '\n')
+                    else: # Handeling First line
                         outfile.write(line + '\n')
                 else:
                     sequence += line
