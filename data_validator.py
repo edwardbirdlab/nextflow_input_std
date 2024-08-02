@@ -406,11 +406,11 @@ def main():
                 if args.gzip:
                     gzip_file(multiline_convert, 'Validated_Data/' + file_name_fa + '.fasta.gz')
                     shutil.rmtree('data_val_temp')  # Removing Temp Files
-                    print('Fasta File ' + args.file + ' was checked and whitespace removed. It can be found at Validated_Data/' + file_name_fa + '.fasta.gz')
+                    print('Fasta File ' + args.file + ' was checked, whitespace removed, and compressed.. It can be found at Validated_Data/' + file_name_fa + '.fasta.gz')
                 else:
                     shutil.copy(multiline_convert, 'Validated_Data/' + file_name_fa + '.fasta')
                     shutil.rmtree('data_val_temp')  # Removing Temp Files
-                    print('Fasta File ' + args.file + ' was checked, whitespace removed, and compressed. It can be found at Validated_Data/' + file_name_fa + '.fasta')
+                    print('Fasta File ' + args.file + ' was checked and whitespace removed. It can be found at Validated_Data/' + file_name_fa + '.fasta')
             else:
                 print('File ' + args.file + ' did not pass fasta check, or multi-line fasta check')
 
