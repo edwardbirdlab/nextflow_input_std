@@ -201,11 +201,13 @@ def multiline_fasta_convert(fasta, prefix):
                 line = line.strip()
                 if line.startswith('>'):
                     if sequence != '':
+                        outfile.write(line + '\n')
                         outfile.write(sequence + '\n')
                         sequence = ''
-                outfile.write(line + '\n')
-            else:
-                sequence += line
+                    else:
+                        outfile.write(line + '\n')
+                else:
+                    sequence += line
         return prefix + '_singleline.fasta'
     except Exception as e:
         print(f"Error processing {fasta}: {e}", file=sys.stderr)
