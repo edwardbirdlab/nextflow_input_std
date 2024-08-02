@@ -48,11 +48,11 @@ Running locally:
 
 Retun uncompressed fastqs:
 ```sh
-data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name} {sample name}
+data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name} --sample_name {sample name}
 ```
 Retun compressed fastqs:
 ```sh
-data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name} {sample name} --gzip
+data_validator.py PE_FQ {R1_Fastq_file_name} {R2_Fastq_file_name} --sample_name {sample name} --gzip
 ```
 
 # Data_validator in FastQ Single-End Mode
