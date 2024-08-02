@@ -208,6 +208,7 @@ def multiline_fasta_convert(fasta, prefix):
                         outfile.write(line + '\n')
                 else:
                     sequence += line
+            outfile.write(sequence) # Last sequence
         return prefix + '_singleline.fasta'
     except Exception as e:
         print(f"Error processing {fasta}: {e}", file=sys.stderr)
